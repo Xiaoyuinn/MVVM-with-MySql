@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<efcore namespace="MVVM6" p1:name="mvvmlogindbModel" p1:Guid="38b19dc0-8637-4d52-9b7f-5a0f3844a604" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0">
+  <class name="User" entity-set="Users" table="users" schema="mvvmlogindb" p1:Guid="5a5204de-e6d0-41fe-bd0c-c1385adc670d">
+    <id name="Id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="dd472bc7-9870-4702-b08b-c5cabeb3a692">
+      <column name="Id" not-null="True" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="Age" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="db525f9b-4fc6-4604-9b32-ad91e95b042b">
+      <column name="Age" not-null="False" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="Email" type="String" p1:nullable="True" p1:ValidateMaxLength="255" p1:ValidateRequired="false" p1:Guid="f77688b9-3f8f-47a7-8d95-02641dec85d6">
+      <column name="Email" not-null="False" length="255" sql-type="varchar" p1:unicode="True" />
+    </property>
+    <property name="Name" type="String" p1:ValidateMaxLength="255" p1:ValidateRequired="true" p1:Guid="9ca8a552-d494-4502-8431-0c306f7c3392">
+      <column name="Name" not-null="True" length="255" sql-type="varchar" p1:unicode="True" />
+    </property>
+  </class>
+</efcore>
